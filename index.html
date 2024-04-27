@@ -1,11 +1,52 @@
-<!DOCTYPE html>
-<html lang="UTF-8">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben Wasden WDD131</title>
-</head>
-<body>
-    <h1>WDD131 - BWasden</h1>
-</body>
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="styles/base.css">
+        <script src="scripts/getdates.js" defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Ben Wasden WDD 131 - Dynamic Web Fundamentals Home Page">
+        <title>WDD 131 - Dynamic Web Fundamentals - Benjamin Wasden</title>
+    </head>
+    <body>
+        <header>
+            <h1>WDD 131: Dynamic Web Fundamentals - Benjamin Wasden</h1>
+            <nav>
+                <a href="https://www.linkedin.com/">LinkedIn</a>
+                <a href="https://byui.instructure.com/">I-Learn</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/isa/41?lang=eng&id=p10#p10">Scripture</a>
+                <a href="">Final Project</a>
+            </nav>
+        </header>
+        <div class="grid">
+            <main>
+                <section class="card">
+                    <h1>About Me</h1>
+                    <img src="images/profile.jpg" alt="Image of Benjamin Wasden" width="150">
+                    <p>Hi! My name is Benjamin Wasden. I was born, raised, and currently live in California. I work in I.T. at the moment and am working towards getting my bachelors in software development. I also love to draw, listen to and perform music, and more!</p>
+                    <div class="state">
+                        <h2>California, United States</h2>
+                        <figure>
+                            <img src="images/californiaflag.png" alt="California Flag" width="300">
+                            <figcaption>State Flag of California</figcaption>
+                        </figure>
+                        <p>California is the third largest US state by area, and largest by population. Located on the west of the contiguous United States, it has a large variety of terrain and biomes, from mountains, plains, forests, deserts, beaches, and many more. While California is well known for many things, most people know it for Los Angeles, San Francisco, and Silicon Valley.</p>
+                    </div>
+                </section>
+                <section class="card">
+                    <h1>Web Dev Resources</h1>
+                    <ul>
+                        <li><a href="https://picsum.photos/">Lorem Picsum Images</a></li>
+                        <li><a href="https://coolors.co/generate">Color Palette Generator</a></li>
+                        <li><a href="https://webaim.org/resources/contrastchecker/">Color Contrast Checker</a></li>
+                        <li><a href="https://imageresizer.com/">Image Resizer</a></li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <p>©<span id="currentyear"></span> | Benjamin Wasden | United States, California</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+    </body>
 </html>
