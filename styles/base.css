@@ -47,6 +47,7 @@ main h2 {
     background-color: var(--primary-color);
     text-align: center;
     font-family: var(--heading-font);
+    padding: 10px;
 }
 main p {
     font-size: 20px;
@@ -105,9 +106,4 @@ main {
     padding: 10px;
     font-family: var(--paragraph-font);
     font-style: italic;
-}
-.card h2 {
-    padding: 10px;
-    text-align: center;
-    font-family: var(--heading-font);
 }
