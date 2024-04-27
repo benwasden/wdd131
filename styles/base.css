@@ -97,11 +97,16 @@ main {
 .state h2 {
     padding-bottom: 15px;
     text-align: center;
-    border-bottom: 1px solid var(--secondary-color)
+    border-bottom: 1px solid var(--secondary-color);
 }
 .state figure {
     float: left;
     padding: 10px;
     font-family: var(--paragraph-font);
     font-style: italic;
+}
+.card h2 {
+    padding: 10px;
+    text-align: center;
+    font-family: var(--heading-font);
 }
