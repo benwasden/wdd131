@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Zilla+Slab:wght@300&display=swap');
-
 :root {
     --primary-color: #4d5359;
     --secondary-color: #4A4238;
     --accent1-color: #508484;
 
-    --heading-font: 'Anton', sans-serif;
-    --paragraph-font: 'Zilla Slab', serif;
+    --heading-font: 'Kanit', sans-serif;
+    --paragraph-font: 'Rajdhani', sans-serif;
 }
 
 * {
