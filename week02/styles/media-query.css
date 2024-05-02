@@ -1,0 +1,19 @@
+header, main, footer {
+    margin: 1rem auto;
+    max-width: 640px;
+    border: 1px solid #bbb;
+    background-color: rgb(119, 139, 236);
+    padding: 1rem;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+.scripture {
+    padding: 1rem;
+    background-color: white;
+}
