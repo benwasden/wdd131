@@ -8,5 +8,4 @@ const postsElement = document.querySelector("#reviews");
 let reviewCount = Number(window.localStorage.getItem("reviewCount")) || 1;
 postsElement.textContent = reviewCount;
 
-reviewCount = reviewCount + 1;
 localStorage.setItem("reviewCount", reviewCount);

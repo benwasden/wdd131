@@ -42,3 +42,17 @@ products.forEach(option => {
 
     selectElement.appendChild(newOption);
 });
+
+let counter = getCount() || 0;
+
+form.addEventListener("submit", () => {
+    counter = counter + 1;
+    setCount(counter)
+})
+
+function setCount(counter) {
+    localStorage.setItem("reviewCount", counter)
+}
+function getCount() {
+    return JSON.parse(localStorage.getItem('reviewCount'))
+}
