@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+        <script src="scripts/home.js" defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Ben Wasden WDD 131 - Project Home Page">
+        <meta name="author" content="Benjamin Wasden">
+        <title>PC Power Home - Benjamin Wasden</title>
+    </head>
+    <body>
+        <header>
+            <h1>PC Power</h1>
+            <img src="images/logo.svg" alt="Logo of monitor" width="50">
+            <button title="Hamburger Menu Button" id="menu"></button>
+                <nav class="navigation">
+                    <a href="index.html">Home</a>
+                    <a href="overview.html">What's In a PC?</a>
+                    <a href="parts.html">Picking Your Parts</a>
+                    <a href="build.html">How to Build a PC</a>
+                </nav>
+        </header>
+        <main>
+            <div class="hero">
+                <picture>
+                    <source srcset="images/home/hero.webp" media="(min-width: 700px)">
+                    <img src="images/home/hero-small.webp" alt="Interior of Computer" width="700">
+                </picture>
+            </div>
+            <section id="foryou">
+                <h2>Here for you!</h2>
+                <table id="uplifting">
+                    <tr>
+                        <td>Here at PC Power, we're committed to helping you get the confidence you need to successfully build your next PC! Here, you'll find guides and suggestions to make sure you can get the right PC for you. Welcome!</td>
+                    </tr>
+                </table>
+            </section>
+            <div class="whybuild">
+                <section id="whybuildpara">
+                    <h2>Why Build My Own PC?</h2>
+                    <p>There are many reasons to build your own PC! When you're building your own computer, you know exactly what's going into it. You can make a system tailor-made just for you, no extra stuff required.</p>
+                    <p>Want to game on your PC? How about edit video? Maybe you're more into programming and want something fast for your work. Or maybe you want a small form factor build like I have? The sky's the limit!</p>
+                </section>
+                <figure>
+                    <img src="images/home/mypc.webp" loading="lazy" alt="Picture of my PC" width="300">
+                    <figcaption>Image of my PC</figcaption>
+                </figure>
+            </div>
+        </main>
+        <footer>
+            <p>©<span id="currentyear"></span> | Benjamin Wasden | United States, California</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+    </body>
+</html>

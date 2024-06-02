@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+        <script src="scripts/home.js" defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Ben Wasden WDD 131 - Project Build Guide Page">
+        <meta name="author" content="Benjamin Wasden">
+        <title>PC Power Build Guide - Benjamin Wasden</title>
+    </head>
+    <body>
+        <header>
+            <h1>PC Power</h1>
+            <img src="images/logo.svg" alt="Logo of monitor" width="50">
+            <button title="Hamburger Menu Button" id="menu"></button>
+                <nav class="navigation">
+                    <a href="index.html">Home</a>
+                    <a href="overview.html">What's In a PC?</a>
+                    <a href="parts.html">Picking Your Parts</a>
+                    <a href="build.html">How to Build a PC</a>
+                </nav>
+        </header>
+        <main>
+            <h2 id="guidetop">Building a PC</h2>
+            <p id="guidetoppara">Regardless of the parts you choose, building a PC is going to have pretty much the same steps. You've got this!</p>
+            <div class="guide">
+                <section class="tutorial">
+                    <h3>1. Prepare Your Workspace</h3>
+                    <p>Prepare your workspace by clearing off a desk or table. Keeping your space clean will help you to keep yourself organized. The only tool that you need for assembling a PC is a phillips-head screwdriver, though you may need a smaller and larger bit to screw in some of the smaller screws.</p>
+                    <p>If you can, avoid carpet, as that can build up static electricity. Regardless of the floor you're standing on, it's a good idea to keep yourself grounded as much as possible. A good way to do this is to take out your power supply, plug it into the wall and keep the power switch off. Regularly touch the outside of your power supply and it'll prevent electrostatic discharge. (ESD)</p>
+                    <figure>
+                        <img src="images/guide/screwdriver.webp" loading="lazy" alt="Picture of Screwdriver" width="300">
+                        <figcaption>Multi-bit Screwdriver</figcaption>
+                    </figure>
+                </section>
+                <section class="tutorial">
+                    <h3>2. Prepare Your Motherboard</h3>
+                    <p>Remove the motherboard from the box. It will be inside of a bag protecting it from ESD. Close the box it was inside of and put the motherboard on top of the box lid. This will act as a testbench for us to build our PC.</p>
+                    <p>When handling a motherboard, try to hold it from any plastic or metal pieces it has. It isn't the end of the world if you hold it by the board, but it's safer and better for it if you try not to.</p>
+                </section>
+                <section class="tutorial">
+                    <h3>3. Testing the Components</h3>
+                    <p>While not necessary, I strongly recommend that you assemble the computer outside of the case on top of the motherboard box first. If you happened to get a part that is dead or isn't working for whatever reason, it's a lot easier to fix it now rather than once everything's in the case.</p>
+                </section>
+                <section class="tutorial">
+                    <h3>4. Installing the CPU</h3>
+                    <p>This step is a little different depending on the parts that you're using. Since this is a guide meant for people building desktops, I'll tell you the two most common types you'll see:</p>
+                    <div class="cputypes">
+                        <ul>
+                            <li>Modern Intel and AMD CPUs use something called a "Lan Grid Array" or LGA type socket to install their processors. In this case, the pins are on the motherboard and the CPU has pads that they connect with.</li>
+                            <li>Old Intel CPUs and AMD CPUs from around 2 years ago used "Pin Grid Array" or PGA. For these CPUs, the pins were on the CPU and the motherboard had slots for the pins to seat inside of.</li>
+                        </ul>
+                        <figure>
+                            <img src="images/parts/cpulga.webp" loading="lazy" alt="Picture of an LGA CPU" width="300">
+                            <figcaption>An Intel LGA CPU</figcaption>
+                        </figure>
+                    </div>
+                    <p>Regardless of which type of CPU you have, you'll need to check the pins on either the motherboard or the CPU itself. If any of them aren't aligned, then you'll either need to fix it or return it.</p>
+                    <p>Once you're confident that your pins are aligned, undo the latch around the CPU socket and lift up the latch (if it's there). Check for the little arrow on the CPU and the motherboard (it's usually in the bottom left when looking at the top). Then, <span class="careful">carefully</span> lower the CPU into place. Lower the latch and lock the CPU into place.</p>
+                    <figure>
+                        <img src="images/guide/installed.webp" loading="lazy" alt="Picture of installed CPU" width="300">
+                        <figcaption>(Credit: Olivier Collet)</figcaption>
+                    </figure>
+                    <p>Congratulations! You've completed the scariest part of building a PC.</p>
+                </section>
+                <section class="tutorial">
+                    <h3>5. Installing the CPU Cooler</h3>
+                    <p>Each cooler is going to have a different method to install it. If you're using something other than the cooler that came in the box, you'll want to look at the manual for their specific cooler.</p>
+                    <p>If you are using stock cooling however, the process is really easy these days. Remove the cooler from the box and look at the underside. You should see some gray paste at the bottom. That's thermal compound, and that's there to help fill the grooves and imperfections in the cooler and CPU so it'll cool efficiently.</p>
+                    <p id="italic">If that paste is missing, get a tube of thermal paste and apply a line that's about the size of a cooked grain of rice to the top of the CPU.</p>
+                    <p>Lower the cooler down onto the CPU. Make sure the push pins or screws are aligned with the holes around the motherboard. Either screw in or push down on the two pins opposite each other until they're secured. Repeat until the cooler is fully installed.</p>
+                    <figure>
+                        <img src="images/parts/cooler.webp" loading="lazy" alt="Picture of CPU cooler" width="300">
+                        <figcaption>Stock AMD Cooler (Credit: Tomáš Malík)</figcaption>
+                    </figure>
+                </section>
+                <section class="tutorial">
+                    <h3>6. Installing the Motherboard</h3>
+                    <p>Take your case out of the box and remove the side panels. Inside the case, you should find an accessories box containing screws that you'll need. On older and lower end motherboards, you'll see that there's an I/O shield inside the motherboard box. If you have that, remove it and push it into the rectangular hole at the back of the case. On newer motherboards, this shield is on the motherboard itself so no need to worry about it.</p>
+                    <p>Lower the motherboard into the case, aligning it with the standoffs inside the case. These standoffs help to keep the motherboard elevated so it's not touching bare metal. Check to make sure that you can see the standoffs through the holes in the motherboard and screw the motherboard into place with the provided screws.</p>
+                </section>
+                <section class="tutorial">
+                    <h3>7. Wiring</h3>
+                    <p>This is another instance where you'll have to look at the manual for your case and motherboard. Each case will have a power button and usually things like USB ports, audio jacks, and more that you'll have to wire. Typically, the location of these are as follows:</p>
+                    <ul>
+                        <li>Front Panel and Lights: Bottom right</li>
+                        <li>USB 2.0 and Audio: Bottom left</li>
+                        <li>USB 3.0 and USB Type C: Upper right</li>
+                    </ul>
+                </section>
+                <section class="tutorial">
+                    <h3>8. Power Suppply</h3>
+                    <p>These days, most power supplies are installed in the bottom of the case in basements. You already removed the power supply from its box, so unplug it, slide it into the large rectangular hole at the back of the case, and screw it in with 4 screws at the back.</p>
+                    <p>Plug in the cables needed for your PC. For now, all we likely need is the 24 pin motherboard cable and an 8 pin CPU cable. The 24 pin is usually located along the right edge of the motherboard, and the 8 pin CPU cable is at the top left of the board.</p>
+                </section>
+                <section class="tutorial">
+                    <h3>9. Storage</h3>
+                    <p>Next up is storage. For modern systems, you'll likely be installing an m.2 SSD. These are small gumstick sized drives that plug into m.2 slots on a motherboard.</p>
+                    <figure>
+                        <img src="images/guide/m2.webp" loading="lazy" alt="Picture of an m2 slot" width="300">
+                        <figcaption>An M.2 slot on a motherboard</figcaption>
+                    </figure>
+                    <p>Align the drive with the slot and make sure the connectors are in the same orientation. Slide it in at an angle until it's pushed in as far as it can go. It will stick up but should be able to be pressed down. Press the drive down and secure it to the standoff with the screw. If a standoff isn't there, install one in one of the holes on the motherboard.</p>
+                    <div class="harddrive">
+                        <p>If you're using a hard drive or a 2.5 inch SSD, you'll have to use a SATA connector.</p>
+                        <figure>
+                            <img src="images/guide/sata.webp" loading="lazy" alt="Picture of an SSD with a SATA connector" width="300">
+                            <figcaption>SSD with a SATA connector</figcaption>
+                        </figure>
+                        <p>SATA is actually made up of two parts - a data connection and a power connection. The data cable comes from your motherboard and plugs into SATA ports on the board (usually in the bottom right or right hand side). Power comes directly from the power supply.</p>
+                        <p>Plug a SATA data cable into your motherboard and run it over to where you're going to mount your SSD or hard drive. Plug it into the smaller connector on the drive. The connector is in an L shape so it'll only go in one way. You'll know it's connected when you hear a "click."</p>
+                        <p>Run a SATA power cable from your power supply to your SSD. Unlike the data cable, this one doesn't have a latch, but it is also in an L shape. Plug it in and your drive is now installed.</p>
+                    </div>
+                </section>
+                <section class="tutorial">
+                    <h3>10. Graphics Card and other Expansion Cards</h3>
+                    <p>Not all PCs require graphics cards. Many modern CPUs have built in integrated graphics on the CPU itself; however, they're often weak and not useful for much beyond just casual PC use. Unless you're a very casual user or you know integrated graphics will be enough, a dedicated graphics card is recommended.</p>
+                    <p>Remove your graphics card from the box. Usually the card will have a cover over the PCIe connector, so remove that before you install it. Move over to the case and unscrew the screws holding in the PCIe cover brackets (they'll be rectangular and below where the motherboard I/O shield was).</p>
+                    <figure>
+                        <img src="images/guide/io.webp" loading="lazy" alt="Picture of IO brackets" width="300">
+                        <figcaption>PCIe cover brackets</figcaption>
+                    </figure>
+                    <p>Undo the lock on the PCIe slot on the motherboard. Align the card with the slot and the back of the case and push firmly in. You should hear a click indicating that the card is locked in place. Use the screws that were holding in the cover brackets to secure the card in place.</p>
+                    <p>Graphics cards usually require additional power from the power supply directly too, so run PCIe power cables from the power supply to the card and plug them in. Be <span class="careful">extremely</span> careful not to use a CPU power cable on accident. They look similar but using the wrong one will cause a fire. The connectors themselves have labels saying what they're for.</p>
+                    <p>By the way, this section explained how to install a graphics card, but these steps can be used for any PCIe expansion card.</p>
+                </section>
+                <p>Now for the moment of truth. Press the power button and see if it powers on. If it does and you get a visual on your monitor, congratulations! Now you can install your operating system of choice and enjoy using your PC!</p>
+            </div>
+        </main>
+        <footer>
+            <p>©<span id="currentyear"></span> | Benjamin Wasden | United States, California</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+    </body>
+</html>

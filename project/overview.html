@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+        <script src="scripts/home.js" defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Ben Wasden WDD 131 - Project Parts Overview Page">
+        <meta name="author" content="Benjamin Wasden">
+        <title>PC Power Parts Overview - Benjamin Wasden</title>
+    </head>
+    <body>
+        <header>
+            <h1>PC Power</h1>
+            <img src="images/logo.svg" alt="Logo of monitor" width="50">
+            <button title="Hamburger Menu Button" id="menu"></button>
+                <nav class="navigation">
+                    <a href="index.html">Home</a>
+                    <a href="overview.html">What's In a PC?</a>
+                    <a href="parts.html">Picking Your Parts</a>
+                    <a href="build.html">How to Build a PC</a>
+                </nav>
+        </header>
+        <main>
+            <h2 id="partsheader">The Parts of a Computer</h2>
+            <p id="topexplain">You can think of a computer like a pie. There are certain ingredients needed for a pie to be a pie. Then there are ingredients that add to it but aren't necessary. We'll look at both types on this page.</p>
+            <div class="topofview">
+                <section class="partsofpcexplain">
+                    <h3>There are at least 6 parts to every computer:</h3>
+                    <ul>
+                        <li>Central Processing Unit (CPU)</li>
+                        <li>CPU Cooler</li>
+                        <li>Motherboard</li>
+                        <li>Random Access Memory (RAM)</li>
+                        <li>Power Supply</li>
+                        <li>Storage</li>
+                    </ul>
+                    <h3>There are other parts that are often included as well:</h3>
+                    <ul>
+                        <li>Computer Cases</li>
+                        <li>Graphics Card</li>
+                        <li>Other Expansion Cards</li>
+                        <li>Case Fans</li>
+                    </ul>
+                </section>
+                <img src="images/minipc.webp" loading="lazy" alt="Picture of mini PC" width="500">
+            </div>
+            <h2 id="moredetail">Let's look at each of these in more detail</h2>
+            <div class="component">
+                <section class="part">
+                    <h3>Central Processing Unit (CPU)</h3>
+                    <div class="componentarticle">
+                        <p>The CPU is the "brains" of a PC. As the name suggests, it handles the processing of tasks you give to a computer. Unlike GPUs which we'll discuss later, CPUs are more general purpose parts that handle many different tasks. Just like everything else here though, it's completely useless without a motherboard to plug into. If you're building your own PC, the two CPU manufacturers you can buy from are AMD and Intel.</p>
+                        <figure>
+                            <img src="images/parts/cputop.webp" loading="lazy" alt="Picture of top of CPU" width="200">
+                        </figure>
+                    </div>
+                </section>
+                <section class="part">
+                    <h3>CPU Cooler</h3>
+                    <div class="componentarticle">
+                        <p>The CPU cooler does exactly what it sounds like; it cools the CPU. Contrary to the simple name however, CPU coolers can be anything but simple. Most of the time, the ones you will run into in a regular desktop are air coolers. In a prebuilt PC from, say, Dell, the cooler will look similar to the one in the provided image. Generally, it's recommended that you select a more powerful cooler than that. You can choose a more powerful air cooler with larger fans, or even go for water cooling.</p>
+                        <figure>
+                            <img src="images/parts/cooler.webp" loading="lazy" alt="Picture of a CPU Cooler" width="200">
+                            <figcaption>(Credit: Tomáš Malík)</figcaption>
+                        </figure>
+                    </div>
+                </section>
+                <section class="part">
+                    <h3>Motherboard</h3>
+                    <div class="componentarticle">
+                        <p>The motherboard is the "skeleton" of a PC. Without it, nothing else would be able to function. The motherboard connects every other part to each other, taking power from the power supply and delivering it to the parts that need it. Motherboards come in a wide variety of sizes, including small ones that fit in cases the size of a shoebox, to huge ones that can take two or more CPUs. They can often be the most finnicky part of a computer, but they play a very, very important role.</p>
+                        <figure>
+                            <img src="images/parts/mobo.webp" loading="lazy" alt="Picture of a Motherboard" width="200">
+                            <figcaption>(Credit: Muxin Alkayis)</figcaption>
+                        </figure>
+                    </div>
+                </section>
+                <section class="part">
+                    <h3>Random Access Memory (RAM)</h3>
+                    <div class="componentarticle">
+                        <p>RAM is essentially a small amount of storage that parts of a computer can access. However, unlike your hard drive or SSD, RAM is much, much faster. These days, RAM can reach speeds that are over 5 times faster than even the fastest SSDs today. This allows the CPU to store small amounts of information that it needs quick access to. RAM also doesn't store things if it loses power, so when a computer is shut off, it generally flushes what was stored on it.</p>
+                        <figure>
+                            <img src="images/parts/ram.webp" loading="lazy" alt="Picture of a RAM module" width="200">
+                        </figure>
+                    </div>
+                </section>
+                <section class="part">
+                    <h3>Power Supply</h3>
+                    <div class="componentarticle">
+                        <p>The Power Supply is perhaps the only dangerous part of a computer. This component is critical, and while you can definitely cut corners on parts if you're on a budget, I absolutely would not cheap out on your power supply. This part provides power to everything else, and you want a reliable unit. This is really the only part of a PC that can cause serious harm to both your parts and you.</p>
+                        <figure>
+                            <img src="images/parts/psu.webp" loading="lazy" alt="Picture of a Power Supply" width="200">
+                            <figcaption>(Credit: Joseph Greve)</figcaption>
+                        </figure>
+                    </div>
+                </section>
+                <section class="part">
+                    <h3>Storage</h3>
+                    <div class="componentarticle">
+                        <p>The Storage Drive is where all of your data is stored. This is where your operating system (Windows, Linux, etc.) will go, along with any files. The two main types of drives you'll see these days are hard drives (HDDs) and solid state drives (SSDs). HDDs are good for storing large amounts of things cheaply but they're slow and have moving parts, making them much more fragile. SSDs are much more common these days, and they're much faster and smaller as well (some are only the size of a piece of chewing gum).</p>
+                        <figure>
+                            <img src="images/parts/ssd.webp" loading="lazy" alt="Picture of an SSD" width="200">
+                        </figure>
+                    </div>
+                </section>
+                <section class="part">
+                    <h3>Computer Cases</h3>
+                    <div class="componentarticle">
+                        <p>Computer cases are where all of your components are stored. While not strictly necessary (as PCs can be put on open air test benches especially if you're going to be frequently putting new parts in for testing), they offer a safe place to put your components and help to keep them clean from dust. Like motherboards, cases come in a wide variety of sizes and shapes, from massive towers to small shoeboxes for small form factor builds.</p>
+                        <figure>
+                            <img src="images/parts/case.webp" loading="lazy" alt="Picture of a PC case" width="200">
+                            <figcaption>(Credit: Olivier Collet)</figcaption>
+                        </figure>
+                    </div>
+                </section>
+                <section class="part">
+                    <h3>Graphics Cards</h3>
+                    <div class="componentarticle">
+                        <p>Graphics Cards are the most important components in PCs meant for 3D modeling and gaming. The processor of a graphics card is called the "GPU" or graphics processing unit, which gives away what it's used for. They also come in a wide variety of models, from cheap, small cards just meant to let you plug in more monitors, to massive ones that are almost their own computers by themselves. Graphics cards also have their own RAM that's used just for it, so calling them a computer within a computer isn't far off.</p>
+                        <figure>
+                            <img src="images/parts/3090.webp" loading="lazy" alt="Picture of a graphics card" width="200">
+                            <figcaption>(Credit: Bruno Yamazaky)</figcaption>
+                        </figure>
+                    </div>
+                </section>
+                <section class="part">
+                    <h3>Other Expansion Cards</h3>
+                    <div class="componentarticle">
+                        <p>Graphics Cards aren't the only expansion cards that can be plugged into a PC however. Most of the time, these cards will be plugged into the PCIe slots on the motherboard; however, some cards also use an m.2 slot. In the provided image, a small m.2 SSD has been plugged into the motherboard. You can also put cards in that provide wifi, sound, add additional USB ports, etc. There's tons of possibilities for customization!</p>
+                        <figure>
+                            <img src="images/parts/m2ssd.webp" loading="lazy" alt="Picture of an m.2 wifi card" width="200">
+                        </figure>
+                    </div>
+                </section>
+                <section class="part">
+                    <h3>Case Fans</h3>
+                    <div class="componentarticle">
+                        <p>Case Fans are there to help direct cool air to your components and exhaust hot air out of the case. While technically possible to build a computer with no fans at all, most PCs these days will have a fan of some kind. They come in a wide range of sizes, but the most common will be 120mm and 140mm. You may also see 92mm and 80mm fans in small builds. While you can use any fan you'd like, remember that the bigger the fan is, the more air it can push at the same speed, or it can push the same amount at a lower speed. </p>
+                        <figure>
+                            <img src="images/parts/fan.webp" loading="lazy" alt="Picture of a Case Fan" width="200">
+                        </figure>
+                    </div>
+                </section>
+            </div>
+            <p id="bottomofoverview">This has just been an overview of the most common parts of a modern PC. While they may look different, nearly any device will have some or all of these parts in it. You're now ready to begin choosing parts!</p>
+        </main>
+        <footer>
+            <p>©<span id="currentyear"></span> | Benjamin Wasden | United States, California</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/parts.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+        <script src="scripts/parts.js" defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Ben Wasden WDD 131 - Project Parts Guide Page">
+        <meta name="author" content="Benjamin Wasden">
+        <title>PC Power Parts Guide - Benjamin Wasden</title>
+    </head>
+    <body>
+        <header>
+            <h1>PC Power</h1>
+            <img src="images/logo.svg" alt="Logo of monitor" width="50">
+            <button title="Hamburger Menu Button" id="menu"></button>
+                <nav class="navigation">
+                    <a href="index.html">Home</a>
+                    <a href="overview.html">What's In a PC?</a>
+                    <a href="parts.html">Picking Your Parts</a>
+                    <a href="build.html">How to Build a PC</a>
+                </nav>
+        </header>
+        <main>
+            <h2>Picking Parts for a PC</h2>
+            <div class="questions">
+                <p>There are many factors to consider when you're shopping for PC parts. The biggest and most important question is "what is my PC going to be used for?" Am I using it for video editing, 3d modeling, gaming, or word processing? This question will help determine what parts to prioritize.</p>
+                <p>Here are some basic guidelines. Am I going to be...</p>
+                <ul>
+                    <li>Gaming - Requires a fast graphics card and less on your CPU and RAM.</li>
+                    <li>Video Editing - Requires a good CPU and lots of RAM plus storage.</li>
+                    <li>3D Modeling - Needs a good GPU and CPU with more RAM than a usual gaming PC.</li>
+                    <li>Word Processing - Doesn't need a strong computer, so spend more money on a good keyboard.</li>
+                </ul>
+                <p>These are all very different PCs that fit each use case better. Deciding this early on will help you get the computer you actually need.</p>
+                <p>The next most important question is budget. How much are you able to spend and additionally, how much <span class="italicparts">should</span> you spend? There's no need to spend more to get performance that's not going to help you. For example, a person who just does internet browsing and word processing doesn't need the best of the best CPU out there. Something that's a tenth the price could have served them just as well.</p>
+            </div>
+            <h3>Form for Questions</h3>
+            <p id="recommend">Please fill out this form if you have any questions to ask!</p>
+            <form method="get" action="submit.html" class="product">
+                <fieldset>
+                    <label>Your Name<input type="text" name="name" id="name" required></label>
+                    <label>Email<input type="email" name="email" id="email" required></label>
+                    <label>Budget
+                        <select name="budget" id="budget">
+                            <option value="" disabled selected>Select a budget...</option>
+                            <option value="500" id="500">$500 or less</option>
+                            <option value="1000" id="1000">$1000</option>
+                            <option value="2000" id="2000">$2000</option>
+                        </select>
+                    </label>
+                    <label>What Will I Use This PC For?
+                        <select name="useCase" id="useCase">
+                            <option value="" disabled selected>Select a use case...</option>
+                            <option value="word" id="word">Word Processing/General Use</option>
+                            <option value="model" id="model">3D Modeling</option>
+                            <option value="video" id="video">Video Editing</option>
+                            <option value="program" id="program">Programming</option>
+                            <option value="game" id="game">Gaming</option>
+                        </select>
+                    </label>
+                    <label>Email Message</label>
+                    <textarea name="review" id="writtenreview" rows="4" required></textarea>
+                    <input type="submit" id="submit" value="Send Your Email">
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <p>©<span id="currentyear"></span> | Benjamin Wasden | United States, California</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+    </body>
+</html>
