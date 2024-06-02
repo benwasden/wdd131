@@ -55,6 +55,9 @@ textarea {
     height: 70px;
     width: 98.5%;
 }
+footer a {
+    color: white;
+}
 .product label {
     display: block;
     padding-top: 1rem;

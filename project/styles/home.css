@@ -76,6 +76,9 @@ h3 {
     font-family: var(--heading-font);
     font-size: 25px;
 }
+footer a {
+    color: white;
+}
 .topofview, .whybuild {
     border-top: solid 1px black;
     margin: 1rem;

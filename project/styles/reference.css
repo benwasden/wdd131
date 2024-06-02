@@ -1,0 +1,22 @@
+:root {
+    --primary-color: #32021F;
+    --secondary-color: #e2ecf4;
+
+    --heading-font: "Kanit", sans-serif;
+    --paragraph-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    font-size: 30px;
+}
+main {
+    margin: 1rem;
+    padding: 1rem;
+}
+p, li {
+    font-family: var(--paragraph-font);
+}
+footer a {
+    color: white;
+}
