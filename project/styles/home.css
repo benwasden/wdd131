@@ -79,6 +79,9 @@ h3 {
 footer a {
     color: white;
 }
+footer a:visited {
+    color: white;
+}
 .topofview, .whybuild {
     border-top: solid 1px black;
     margin: 1rem;
